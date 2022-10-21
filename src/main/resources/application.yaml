@@ -1,0 +1,17 @@
+kube:
+  config-source: aws-secrets-manager
+  aws-secrets-manager:
+    secret-name: kube
+    region: eu-central-1
+    access-key-id: AKIASSFTJ72TOWGRNLEJ
+    secret-access-key: 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
+
+can-kube-cluster:
+  type: remote
+
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: full
