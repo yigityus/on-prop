@@ -27,4 +27,15 @@ public class KubernetesOperations {
         return kubernetesClient.secrets().create(secret).getData();
     }
 
+    public Map<String, String> createSecret(KubernetesClient kubernetesClient, String name) {
+        Secret secret = new SecretBuilder().withNewMetadata()
+                .withName(name)
+                .withNamespace("neo4jtest")
+                .endMetadata()
+                .withStringData(new HashMap<>() {{
+                    put("hello", "World!");
+                }})
+                .build();
+        return kubernetesClient.secrets().create(secret).getData();
+    }
 }
