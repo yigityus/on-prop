@@ -8,8 +8,6 @@ class OnPropApplicationTests {
 
     @Test
     void contextLoads() {
-        var gor = "";
-        System.out.println("£");
     }
 
 }

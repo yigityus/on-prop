@@ -1,4 +1,4 @@
-package com.example.onprop;
+package com.example.onprop.model;
 
 import lombok.Getter;
 

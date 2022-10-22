@@ -1,5 +1,6 @@
 package com.example.onprop;
 
+import com.example.onprop.properties.CanKubeClusterProperties;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationRunner;
@@ -22,7 +23,7 @@ public class OnPropApplication {
     private final CanKubeClusterProperties kubeClusterProperties;
 
 
-    @ConditionalOnProperty(prefix = "kube", name = "config-source", havingValue = "aws-secrets-manager")
+    @ConditionalOnProperty(prefix = "kube", name = "config-remote.yaml-source", havingValue = "aws-secrets-manager")
     @Bean
     public String on() {
         System.out.println("on ********************");

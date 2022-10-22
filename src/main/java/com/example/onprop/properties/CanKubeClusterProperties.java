@@ -1,5 +1,6 @@
-package com.example.onprop;
+package com.example.onprop.properties;
 
+import com.example.onprop.model.CanKlusterType;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

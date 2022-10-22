@@ -9,7 +9,6 @@ kube:
 can-kube-cluster:
   type: remote
 
-
 feign:
   client:
     config:
