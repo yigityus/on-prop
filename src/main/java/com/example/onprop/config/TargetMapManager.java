@@ -1,6 +1,5 @@
 package com.example.onprop.config;
 
-import com.example.onprop.model.Wrapper;
 import io.fabric8.kubernetes.client.Config;
 import io.fabric8.kubernetes.client.DefaultKubernetesClient;
 import io.fabric8.kubernetes.client.KubernetesClient;
@@ -17,7 +16,7 @@ import java.util.Map;
 @Data
 @Builder
 @Component
-public class TargetMapConfig {
+public class TargetMapManager {
     private Map<String, KubernetesClient> kubernetesClientMap;
 
     public KubernetesClient getClient(String target) {
